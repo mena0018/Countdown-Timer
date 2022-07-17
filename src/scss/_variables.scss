@@ -6,10 +6,10 @@
 $primary:  #8486a9;
 $soft-red: #fb6087;
 
-$white: hsl(0, 0%, 100%);
-$dark-desaturated-blue: hsl(236, 21%, 26%);
-$dark-blue: hsl(235, 16%, 14%);
-$very-dark-blue: hsl(234, 17%, 12%);
+$white: #ffffff;
+$dark-desaturated-blue: #343650;
+$dark-blue: #1e1f29;
+$very-dark-blue: #191a24;
 
 
 
@@ -18,3 +18,9 @@ $very-dark-blue: hsl(234, 17%, 12%);
 $font-fam: "Red Hat text", sans-serif;
 $font-size: 14px;
 $font-weight: 700;
+
+
+
+// Width 
+
+$max-width: 1440px;
