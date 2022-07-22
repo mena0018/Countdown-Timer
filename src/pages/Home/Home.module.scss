@@ -3,7 +3,27 @@
 
 
 .home_container {
-   padding-top: 100px;
-   text-align: center;
-   height: 30%;
+  text-align: center;
+  height: 100%;
+
+  .title {
+    padding-top: 150px;
+    color: $white;
+    font-weight: $font-weight;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 25px;
+  }
+}
+
+.list_card {
+  display: flex;
+  background: lightgrey;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+
+  .card_container {
+    margin: 0 70px;
+  }
 }
