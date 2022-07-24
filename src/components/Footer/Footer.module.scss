@@ -3,31 +3,28 @@
 
 
 footer {
-  width: 100%;
-  height: auto;
   position: fixed;
   bottom: 0;
-  max-width: $max-width;
+  left: 0;
+  right: 0;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  background-image: url("../../images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  ul {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: absolute;
-    bottom: 25%;
-
-    .social_media {
-      list-style: none;
-      cursor: pointer;
-      color: transparent;
+  .social_media {
+    img {
+      width: 25px;
+      height: 25px;
       margin: 0 15px;
-      
-      img {
-         transition: transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out;
 
-        &:hover {
-          transform: scale(1.4);
-        }
+      &:hover {
+        transform: scale(1.4);
       }
     }
   }
