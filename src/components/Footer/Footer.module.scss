@@ -11,7 +11,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2%;
+  padding-top: 5%;
   background-image: url("../../images/pattern-hills.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,12 @@ footer {
       transition: transform 0.2s ease-in-out;
 
       &:hover {
-        transform: scale(1.4);
+        filter: invert(48%)
+                sepia(89%)
+                saturate(1180%)
+                hue-rotate(310deg)
+                brightness(100%) 
+                contrast(98%);
       }
     }
   }
