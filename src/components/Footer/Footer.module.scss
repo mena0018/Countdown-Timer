@@ -22,6 +22,7 @@ footer {
       height: 25px;
       margin: 0 15px;
       transition: transform 0.2s ease-in-out;
+      cursor: pointer;
 
       &:hover {
         filter: invert(48%)

@@ -7,7 +7,7 @@ import styles from "./Home.module.scss";
 export default function Home() {
   
    const now = new Date().getTime();
-   const countDownDate = new Date("Septembre 1, 2022").getTime();
+   const countDownDate = new Date("August 7, 2023").getTime();
    const distance = countDownDate - now;
 
    const days    = Math.floor(distance / (1000 * 60 * 60 * 24))
@@ -39,7 +39,7 @@ export default function Home() {
 
          <div className={styles.list_card}>
 
-            {datas.map( (item: DataType, index:number ) => 
+            {datas.map( (item: DataType, index:number) => 
                <div key={index} className={styles.card_container}>
                   <Card type={item.type} value={item.value}  />
                </div>

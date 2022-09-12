@@ -10,6 +10,8 @@ export default function Card({ type, value }: DataType) {
       to: { opacity: 1, x: 0}
    })
 
+   let formattedValue = value < 10 ? `0${value}` : value
+
   return (
      <>
       {trail.map((cardStyle, index) => {
@@ -19,7 +21,7 @@ export default function Card({ type, value }: DataType) {
             <div className={`${styles.wrapper} ${type}`}>
                <div className={styles.point_left}></div>
                <div className={styles.point_right}></div>
-               <p className={styles.value}>{value}</p>
+               <p className={styles.value}>{formattedValue}</p>
             </div>
             
             <p className={styles.type}>{type}</p>
