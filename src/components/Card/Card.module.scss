@@ -15,7 +15,6 @@
 .wrapper {
   width: 10em;
   height: 9em;
-  background: $dark-desaturated-blue;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -33,17 +32,48 @@
     left: 100%;
   }
 
-  .top, .bottom {
+  .top {
+    width: 100%;
+    height: 50%;
+    background: $blue;
+    perspective: 3000px;
+
+    &.top_flip {
+      animation: topFlip 150ms ease-in;
+      transform-origin: 50% 100%;
+      perspective: 3000px;
+      perspective-origin: top;
+    }
+
+    @keyframes topFlip {
+      100% {
+        transform: rotateX(90deg);
+      }
+    }
+  }
+
+  .bottom {
     width: 100%;
     height: 50%;
     background: $dark-desaturated-blue;
-    filter: brightness(0.85);
-  }
-  .bottom {
-    filter: brightness(1.3);
     border-top: 2px solid $very-dark-blue;
-  }
+    perspective: 3000px;
 
+    &.bottom_flip {
+      animation: bottomFlip 150ms ease-out 150ms;
+      transform: rotateX(90deg);
+      transform-origin: top;
+      perspective: 3000px;
+      perspective-origin: center;
+    }
+     
+    @keyframes bottomFlip {
+      100% {
+        transform: rotateX(0deg);
+      }
+    }
+  }
+ 
   .value {
     font-size: clamp(30px, 8vw, 75px);
     color: $soft-red;
