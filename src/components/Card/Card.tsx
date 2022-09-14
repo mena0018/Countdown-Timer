@@ -18,10 +18,10 @@ export default function Card({ type, value }: DataType) {
 
          return <animated.div style={cardStyle} key={index}>
 
-            <div className={`${styles.wrapper} ${type}`}>
-               <div className={styles.point_left}></div>
-               <div className={styles.point_right}></div>
-               <p className={styles.value}>{formattedValue}</p>
+            <div className={styles.wrapper}>
+               <div className={styles.top}></div>
+               <p   className={styles.value}>{formattedValue}</p>
+               <div className={styles.bottom}></div>
             </div>
             
             <p className={styles.type}>{type}</p>

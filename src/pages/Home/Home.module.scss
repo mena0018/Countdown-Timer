@@ -18,11 +18,11 @@
   }
 
   .list_card {
-    width: 95%;
+    width: min-content;
     height: 50%;
     max-width: $max-width;
     @include align-flex(center);
-    gap: 50px;
+    gap: 2em;
 
     .card_container {
       text-align: center;
@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .container_global {
     .list_card {
       gap: 0.8em;

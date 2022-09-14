@@ -11,3 +11,10 @@
   object-fit: cover;
   height: 100%;
 }
+
+@mixin translate-middle($left) {
+  position: absolute;
+  top: 50%;
+  left: $left;
+  transform: translate(-50%, -50%);
+}

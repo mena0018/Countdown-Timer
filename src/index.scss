@@ -16,7 +16,7 @@ body, #root {
   font-family: $font-fam;
   height: 100%;
   background-image: url("./images/bg-stars.svg");
-  background-color: $dark-blue;
+  background: linear-gradient($dark-blue, 92%, $soft-red)
 }
 
 .App-container {
