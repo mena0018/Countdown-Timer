@@ -14,7 +14,7 @@
     font-weight: $font-weight;
     text-transform: uppercase;
     letter-spacing: 10px;
-    font-size: clamp(15px, 3vw, 30px);
+    font-size: clamp(0.8em, 3vw, 1.8em);
   }
 
   .list_card {
@@ -33,7 +33,7 @@
 @media screen and (max-width: 750px) {
   .container_global {
     .list_card {
-      gap: 0.8em;
+      gap: 0.7em;
     }
   }
 }
