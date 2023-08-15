@@ -7,7 +7,7 @@ import styles from "./Home.module.scss";
 export default function Home() {
   
    const now = new Date().getTime();
-   const countDownDate = new Date("August 7, 2023").getTime();
+   const countDownDate = new Date("August 7, 2024").getTime();
    const distance = countDownDate - now;
 
    const days    = Math.floor(distance / (1000 * 60 * 60 * 24))
